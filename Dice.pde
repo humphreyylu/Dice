@@ -45,7 +45,7 @@ void mousePressed() {
        
         
         rect(diceX, diceY, 60, 60);
-        fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+        fill((int)(Math.random()*255)+150,(int)(Math.random()*255)+150,(int)(Math.random()*255)+150);
         if (numRolled == 1)
         {
         ellipse(diceX+30, diceY+30, 10,10);
@@ -55,9 +55,9 @@ void mousePressed() {
             ellipse(diceX+40, diceY+30, 8,8);
         } else if (numRolled == 3) 
         {        
-           ellipse(diceX+30, diceY+20, 8,8);
-           ellipse(diceX+45, diceY+40, 8,8);
-           ellipse(diceX+15, diceY+40, 8,8); 
+           ellipse(diceX+20, diceY+20, 8,8);
+           ellipse(diceX+30, diceY+30, 8,8);
+           ellipse(diceX+40, diceY+40, 8,8); 
         } else if (numRolled == 4)
         {
            ellipse(diceX+20, diceY+20, 8,8);
