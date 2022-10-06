@@ -21,15 +21,15 @@ void mousePressed() {
       redraw();
      
 }
-  class Die //models one single dice cube
+  class Die 
   {
-      //member variable declarations here
+      
       int numRolled;
       int diceX;
       int diceY;
-      Die(int x, int y) //constructor
+      Die(int x, int y) 
       {
-          //variable initializations here
+        
           roll();
           diceX = x;
           diceY = y;
@@ -43,7 +43,7 @@ void mousePressed() {
           noStroke();
         fill(0);
        
-        //ellipse(myX, myY, 40, 50);
+        
         rect(diceX, diceY, 60, 60);
         fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
         if (numRolled == 1)
