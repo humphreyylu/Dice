@@ -14,8 +14,8 @@ void draw() {
     }
   }
   textSize(30);
-  text("Total number rolled: " +
-  counter, 25, 450);
+  text("Total counter: " +
+  counter, 70, 450);
 }
 void mousePressed() {
       redraw();
