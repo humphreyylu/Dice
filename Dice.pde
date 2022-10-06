@@ -53,7 +53,7 @@ void mousePressed() {
         {
             ellipse(diceX+20, diceY+30, 8,8);
             ellipse(diceX+40, diceY+30, 8,8);
-        } else if (numRolled ==3) 
+        } else if (numRolled == 3) 
         {        
            ellipse(diceX+30, diceY+20, 8,8);
            ellipse(diceX+45, diceY+40, 8,8);
@@ -64,7 +64,7 @@ void mousePressed() {
            ellipse(diceX+40, diceY+20, 8,8);
            ellipse(diceX+20, diceY+40, 8,8);
            ellipse(diceX+40, diceY+40, 8,8);
-        }  else if (numRolled ==5)
+        }  else if (numRolled == 5)
         {
            ellipse(diceX+20, diceY+20, 8,8);
            ellipse(diceX+40, diceY+20, 8,8);
