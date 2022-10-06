@@ -44,7 +44,7 @@ void mousePressed() {
         fill(0);
        
         
-        rect(diceX, diceY, 60, 60);
+        rect(diceX, diceY, 60, 60, 50);
         fill((int)(Math.random()*255)+150,(int)(Math.random()*255)+150,(int)(Math.random()*255)+150);
         if (numRolled == 1)
         {
