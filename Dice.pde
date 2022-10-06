@@ -4,7 +4,7 @@ void setup() {
 }
 Die bob;
 void draw() {
-  background(200);
+  background((int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250));
   int counter = 0;
   for(int y = 25; y < 350; y += 75) {
     for(int x = 20; x < 350; x += 75) {
@@ -13,9 +13,9 @@ void draw() {
       counter += bob.numRolled;
     }
   }
-  textSize(20);
+  textSize(30);
   text("Total number rolled: " +
-  counter, 80, 450);
+  counter, 25, 450);
 }
 void mousePressed() {
       redraw();
@@ -41,11 +41,11 @@ void mousePressed() {
       void show()
       {
           noStroke();
-        fill(255);
+        fill(0);
        
         //ellipse(myX, myY, 40, 50);
         rect(diceX, diceY, 60, 60);
-        fill(0);
+        fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
         if (numRolled == 1)
         {
         ellipse(diceX+30, diceY+30, 10,10);
@@ -73,12 +73,12 @@ void mousePressed() {
            ellipse(diceX+30, diceY+30, 8,8);
         } else
         {      
-           ellipse(diceX+10, diceY+20, 8,8);
-           ellipse(diceX+30, diceY+20, 8,8);
-           ellipse(diceX+50, diceY+20, 8,8);
-           ellipse(diceX+10, diceY+40, 8,8);
-           ellipse(diceX+30, diceY+40, 8,8);
-           ellipse(diceX+50, diceY+40, 8,8);
+           ellipse(diceX+20, diceY+10, 8,8);
+           ellipse(diceX+20, diceY+30, 8,8);
+           ellipse(diceX+20, diceY+50, 8,8);
+           ellipse(diceX+40, diceY+10, 8,8);
+           ellipse(diceX+40, diceY+30, 8,8);
+           ellipse(diceX+40, diceY+50, 8,8);
       }
       }
   }
